@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Libro {
+  autor: String!
+  id: ID!
+  titulo: String!
+}
+
+type Mutation {
+  agregarLibro(autor: String!, titulo: String!): Libro!
+}
+
+type Query {
+  libro(id: ID!): Libro
+  libros: [Libro!]!
+}
